@@ -1,39 +1,44 @@
 # DevQuest Frontend
 
-## Prerequisites
+A web-based programming learning platform similar to Duolingo, designed to teach programming concepts through interactive exercises and gamification.
 
-* node + npm
+## Live Demo
 
-## Setup
+**Deployed at: [devquest.mattstanley.dev](https://devquest.mattstanley.dev)**
 
-1. Enable `corepack` to install the correct version of `pnpm`
-```sh
-corepack enable
-```
-2. Install dependencies
-```sh
-pnpm install
-```
-3. Start dev server
-```sh
-pnpm dev
-```
+## About
 
-OR
+DevQuest is an educational platform that makes learning programming fun and engaging through:
 
-3. Build Docker image
+- **Interactive Exercises**: Multiple choice, fill-in-the-blank, matching, true/false, and ordering questions
+- **Three Core Courses**: Programming Basics, Data Structures, and Algorithms
+- **Progress Tracking**: Points system and user progress monitoring
+- **Glossary**: Comprehensive definitions and examples for programming concepts
 
+## Technology Stack
 
-## Docker
+**Frontend:**
+- **Framework**: Nuxt.js (Vue.js)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Pinia
+- **Package Manager**: pnpm
 
-Building Docker image example:
-```sh
-docker build . --tag capstone-frontend
-```
+**Backend:**
+- **Language**: Go
+- **Database**: PostgreSQL
 
-Running Docker image example:
-```sh
-docker run -d --rm -e NUXT_PUBLIC_API_BASE=http://myhost.com/api --name capstone-frontend -p 3000:3000 capstone-frontend
-```
+## Repository Structure
 
-Set `NUXT_PUBLIC_API_BASE` to override default backend base url of `http://localhost:8080`
+This project is split into two repositories:
+- **devquest-frontend** (this repository) - User interface and client-side logic
+- **devquest-backend** - API server and database management (Go + PostgreSQL)
+
+## Features
+
+- Responsive design for all devices
+- User authentication and profiles
+- Progress tracking across courses
+- Points and leaderboard system
+- Interactive learning exercises
+- Course roadmap visualization
